@@ -4,6 +4,26 @@
 
 Сделать так, чтобы после пуша в репозиторий автоматически собирался докер образ
 и результат его сборки сохранялся.
+### Основная часть
+
+Итак, мы написали программу на языке Python, которая генерирует .txt файл на локальной машине: 
+
+```
+import subprocess
+import re
+
+#getting sha of last commit
+repo_url = 'https://github.com/Di0Zavr/ItmoCloud_lab3'
+process = subprocess.Popen(["git", "ls-remote", repo_url], stdout=subprocess.PIPE)
+stdout, stderr = process.communicate()
+sha = re.split(r'\t+', stdout.decode('ascii'))[0]
+
+with open("output.txt", "w") as f:
+	f.write(f"Hello, world!\nYour commit's sha is {sha}")
+
+```
+
+А так же Dockerfile, который запускает этот файл, взяв образ Python:
 
 ```
 FROM python:3
@@ -14,6 +34,10 @@ COPY . /app/
 
 CMD ["python", "generate_text.py"]
 ```
+Затем был написан скрипт для GitHub Actions, который срабатывает при пуше в main. Он выполняет 2 задачи(jobs):
+
+1. Запустить Dockerfile, достать из него сгенерированный Python файл и добавить его в наш репозиторий.
+2. Запушить сгенерированный .txt файл на Docker Hub
 
 ```
 name: doing-devops-lab3-stuff
@@ -71,3 +95,8 @@ jobs:
         push: true
         tags: dio05000/lab3-image:latest
 ```
+
+ Docker Hub:
+ 
+![image](https://github.com/Di0Zavr/itmo_cloud_2023/assets/42793074/72a9cee7-f579-4e84-972b-abf27fd7ca06)
+
