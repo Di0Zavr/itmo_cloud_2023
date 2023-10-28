@@ -98,5 +98,6 @@ jobs:
 
  Docker Hub:
  
-![image](https://github.com/Di0Zavr/itmo_cloud_2023/assets/42793074/72a9cee7-f579-4e84-972b-abf27fd7ca06)
+![image](https://github.com/Di0Zavr/itmo_cloud_2023/assets/42793074/30dc8445-3a9e-4f58-a7d4-1b0499c32e30)
+
 
