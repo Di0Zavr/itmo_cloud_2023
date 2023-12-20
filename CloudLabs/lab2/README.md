@@ -1,5 +1,13 @@
 # Аналитическая работа 2
 
+## Состав команды
+`Федорин Кирилл K3240` 
+
+`Яковенко Ксения K3240`
+
+`Сергеев Виктор K3241`
+
+
 ## Цель работы
 
 Знакомство с облачными сервисами.
@@ -76,51 +84,28 @@
 
 ### Сопоставление сервисов между разными провайдерами
 
-В таблице ниже представлено сопоставление сервисов между разными провайдерами.
+В таблице ниже представлено сопоставление сервисов между разными российскими провайдерами.
 
-| Meter Category                | Meter Sub-Category  | Meter Name                   | Consumed Service                  | [AdditionalInfo] | Аналоговые сервисы                                          |
-| ----------------------------- | ------------------- | ---------------------------- | --------------------------------- | ---------------- |-------------------------------------------------------------|
-| Azure Data Factory            | v2                  | Data Movement Self Hosted IR | Microsoft.DataFactory             |                  | Yandex Data Transfer                                        |
-| Azure Data Factory            | v2                  | Orchestration Self Hosted IR | Microsoft.DataFactory             |                  | \-                                                          |
-| Azure Data Factory            | v2                  | %                            | Microsoft.DataFactory             |                  | \-                                                          |
-| Azure Data Factory            | v2                  | Data Movement Cloud IR       | Microsoft.DataFactory             |                  | Yandex Data Transfer                                        |
-| Azure Data Factory            | v2                  | Orchestration Cloud IR       | Microsoft.DataFactory             |                  | \-                                                          |
-| Azure Data Factory            | v2                  | SSIS STD D4 v2               | Microsoft.DataFactory             |                  | \-                                                          |
-| Azure Database for PostgreSQL |                     |                              | Microsoft.DBforMyQL               |                  | Yandex Managed Service for PostgreSQL                       |
-| Azure Database for PostgreSQL |                     |                              | Microsoft.DBforPostgreSQL         |                  | Yandex Managed Service for PostgreSQL                       |
-| Azure Databricks              |                     | %Data Analytics%             | Microsoft.Databricks              |                  | Yandex DataSphere                                           |
-| Azure Databricks              |                     | %Data Engineering%           | Microsoft.Databricks              |                  | Yandex DataSphere                                           |
-| Cache                         | Azure Redis Cache   |                              | Microsoft.Cache                   |                  | Yandex Managed Service for Redis                            |
-| Redis Cache                   |                     | C%                           | Microsoft.Cache                   |                  | Yandex Managed Service for Redis                            |
-| Redis Cache                   |                     | ___C%                        | Microsoft.Cache                   |                  | Yandex Managed Service for Redis                            |
-| CDN                           | CDN                 | Standard CDN Data Transfer%  | Microsoft.Cdn                     |                  | Yandex Data Transfer                                        |
-| Content Delivery Network      | Azure CDN%          | %Data Transfer               | Microsoft.Cdn                     |                  | Yandex Data Transfer                                        |
-| Container Instances           | Container Instances | Core Duration                | Microsoft.ContainerInstance       |                  | Yandex Serverless Containers                                |
-| Container Instances           | Container Instances | Duration                     | Microsoft.ContainerInstance       |                  | Yandex Serverless Containers                                |
-| Container Instances           | Container Instances | Executions                   | Microsoft.ContainerInstance       |                  | Yandex Serverless Containers                                |
-| Container Instances           |                     | Memory Duration              | Microsoft.ContainerInstance       |                  | Yandex Serverless Containers                                |
-| Container Instances           |                     | vCPU Duration                | Microsoft.ContainerInstance       |                  | Yandex Serverless Containers                                |
-| Machine Learning Studio       | Production Web API  |                              | Microsoft.MachineLearning         |                  | Yandex DataSphere                                           |
-| Bandwidth                     |                     | %Data Transfer%              | Microsoft.MachineLearningServices |                  | Yandex Data Transfer                                        |
-| Bandwidth                     |                     | %Data Transfer%              | Microsoft.Search                  |                  | Yandex Data Transfer                                        |
-| VPN Gateway                   |                     | %Gateway%                    | Microsoft.Network                 |                  | \-                                                          |
-| VPN Gateway                   |                     | %Gw%                         | Microsoft.Network                 |                  | \-                                                          |
-| VPN Gateway                   |                     | %Data Transfer%              | Microsoft.Network                 |                  | \-                                                          |
-| Traffic Manager               |                     | %Azure Endpoint%             | Microsoft.Network                 |                  | Yandex Network Load Balancer                                |
-| Traffic Manager               |                     | %Service Endpoint%           | Microsoft.Network                 |                  | Yandex Network Load Balancer                                |
-| Traffic Manager               |                     | %DNS Queries%                | Microsoft.Network                 |                  | Yandex Network Load Balancer                                |
-| Traffic Manager               |                     | %Real User Measurements      | Microsoft.Network                 |                  | Yandex Network Load Balancer                                |
-| Traffic Manager               |                     | %Traffic View%               | Microsoft.Network                 |                  | Yandex Network Load Balancer                                |
-| Azure Firewall                |                     | Deployment                   | Microsoft.Network                 |                  | [cloud.ru](http://cloud.ru/) Web Application Firewall (WAF) |
-| Azure Firewall                |                     | Data Processed               | Microsoft.Network                 |                  | [cloud.ru](http://cloud.ru/) Web Application Firewall (WAF) |
-| Notification Hubs             |                     |                              | Microsoft.NotificationHubs        |                  | Битрикс24 NotiSend                                          |
-| Power BI                      | Embedded            |                              | Microsoft.PowerBI                 |                  | Yandex DataLens                                             |
-| Power BI Embedded             | Power BI Embedded   | A1 Node                      | Microsoft.PowerBIDedicated        |                  | Yandex DataLens                                             |
-| Power BI Embedded             |                     | A1                           | Microsoft.PowerBIDedicated        |                  | Yandex DataLens                                             |
+| Meter Category                | Аналоговые сервисы                                          |
+| ----------------------------- |-------------------------------------------------------------|
+| Azure Data Factory            | Yandex Data Transfer                                        |
+| Azure Database for PostgreSQL | Yandex Managed Service for PostgreSQL                       |
+| Azure Databricks              | Yandex DataSphere                                           |
+| Redis Cache                   | Yandex Managed Service for Redis                            |
+| Content Delivery Network      | Yandex Data Transfer                                        |
+| Container Instances           | Yandex Serverless Containers                                |
+| Machine Learning Studio       | Yandex DataSphere                                           |
+| Bandwidth                     | Yandex Data Transfer                                        |
+| VPN Gateway                   | \-                                                          |
+| Traffic Manager               | Yandex Network Load Balancer                                |
+| Azure Firewall                | [cloud.ru](http://cloud.ru/) Web Application Firewall (WAF) |
+| Notification Hubs             | Битрикс24 NotiSend                                          |
+| Power BI                      | Yandex DataLens                                             |
+| Power BI Embedded             | Yandex DataLens                                             |
 
 ### Вывод
 
 В ходе выполнения данной работы мы познакомились с обилием облачных сервисов Azure.
 Также мы сопоставили сервисы Azure с сервисами Yandex Cloud.
 Для большинства сервисов удалось найти аналоги в Yandex Cloud, некоторые - Cloud.ru или Битрикс24.
-Поэтому можно сделать вывод, что возможно мигрировать на отечественные сервисы.
+Поэтому можно сделать вывод, что большую часть инфраструктуры можно мигрировать на отечественные сервисы.
