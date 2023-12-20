@@ -15,7 +15,7 @@
 
 ### Биллинг
 
-![image](D:\GitHubRepos\itmo_cloud_2023\CloudLabs\lab2\azure_table.png)
+![image](https://github.com/Di0Zavr/itmo_cloud_2023/blob/main/CloudLabs/lab2/azure_table.png?raw=true)
 
 ### Список сервисов и их описание
 
